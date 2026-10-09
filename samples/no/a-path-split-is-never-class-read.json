@@ -1,0 +1,20 @@
+{
+ "witness": "a-path-split-is-never-class-read",
+ "reads": "place",
+ "handed": "two readings of one source operation that agree on GET and disagree on its path",
+ "lines": [
+  "bound-lock/1 at=place:demo.json by=reader:openapi form=alphabet measure=id role=reads scope=openapi/method/demo/getThing value=get",
+  "bound-lock/1 at=place:demo.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/method/demo/getThing value=get",
+  "bound-lock/1 at=place:demo.json by=reader:openapi form=alphabet measure=id role=reads scope=openapi/path/demo/getThing value=/things/{id}",
+  "bound-lock/1 at=place:demo.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/path/demo/getThing value=/admin/things/{id}"
+ ],
+ "why": "the class a host calls by is the verdict, not the method: an operation read two ways compiles to the split class, whatever its method maps to",
+ "expected": [
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=class role=writes scope=offers/demo/getThing value=split",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=path role=writes scope=offers/demo/getThing/carry value=/admin/things/{id}|/things/{id}"
+ ],
+ "never": [
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=class role=writes scope=offers/demo/getThing value=read"
+ ],
+ "expected.ok": false
+}

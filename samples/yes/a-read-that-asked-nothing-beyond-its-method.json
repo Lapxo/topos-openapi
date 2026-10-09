@@ -1,0 +1,14 @@
+{
+ "witness": "a-read-that-asked-nothing-beyond-its-method",
+ "reads": "effects",
+ "handed": "the observed lines of one GET that declares no effect beyond its method",
+ "lines": [
+  "bound-lock/1 at=place:spec by=reader:openapi form=alphabet measure=id role=reads scope=openapi/method/demo/listThings value=get",
+  "bound-lock/1 at=place:spec by=reader:openapi form=alphabet measure=id role=reads scope=openapi/path/demo/listThings value=/things"
+ ],
+ "why": "a GET whose document declares nothing else maps to the one callable effect, and is the only kind of operation a host calls",
+ "expected": [
+  "- `demo/listThings` · get · read · read, called with the person's token"
+ ],
+ "expected.ok": true
+}

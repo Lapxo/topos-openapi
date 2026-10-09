@@ -1,0 +1,15 @@
+{
+ "witness": "two-readings-of-one-set-in-two-orders",
+ "reads": "effects",
+ "handed": "two readings of one operation whose parameters are the same set written in two orders",
+ "lines": [
+  "bound-lock/1 at=place:demo.json by=reader:one form=alphabet measure=id role=reads scope=openapi/method/demo/listThings value=get",
+  "bound-lock/1 at=place:demo.json by=reader:one form=alphabet measure=id role=reads scope=openapi/params/demo/listThings value=query:a|query:b",
+  "bound-lock/1 at=place:demo.yaml by=reader:two form=alphabet measure=id role=reads scope=openapi/params/demo/listThings value=query:b|query:a"
+ ],
+ "why": "two readings that topos reads as the same set are one reading: order is no disagreement, and the read stays callable",
+ "expected": [
+  "- `demo/listThings` · get · read · read, called with the person's token"
+ ],
+ "expected.ok": true
+}

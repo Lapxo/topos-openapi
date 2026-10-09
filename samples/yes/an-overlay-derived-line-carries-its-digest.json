@@ -1,0 +1,27 @@
+{
+ "witness": "an-overlay-derived-line-carries-its-digest",
+ "reads": "place",
+ "handed": "a bearer scheme a document states, given a login step by an overlay the place holds",
+ "lines": [
+  "bound-lock/1 at=place:api/ledger.json by=reader:openapi form=alphabet measure=id role=reads scope=openapi/auth/ledger/session value=http",
+  "bound-lock/1 at=place:api/ledger.json by=reader:openapi form=alphabet measure=id role=reads scope=openapi/http/ledger/session value=bearer",
+  "bound-lock/1 at=place:api/ledger.json by=reader:openapi form=alphabet measure=id role=reads scope=openapi/where/ledger value=https://ledger.example",
+  "bound-lock/1 at=place:api/ledger.json by=reader:openapi form=alphabet measure=id role=reads scope=openapi/overlays/ledger value=sha256:abababababababababababababababababababababababababababababababab",
+  "bound-lock/1 at=place:api/ledger.json by=reader:openapi form=alphabet measure=id role=reads scope=openapi/token/ledger/session value=$steps.login.outputs.token",
+  "bound-lock/1 at=place:api/ledger.json by=reader:openapi form=alphabet measure=id role=reads scope=openapi/operation/ledger/session/steps/1 value=login",
+  "bound-lock/1 at=place:api/ledger.json by=reader:openapi form=alphabet measure=id role=reads scope=openapi/source/ledger/session/steps/1 value=ledger",
+  "bound-lock/1 at=place:api/ledger.json by=reader:openapi form=alphabet measure=id role=reads scope=overlaid/token/ledger/session value=sha256:abababababababababababababababababababababababababababababababab",
+  "bound-lock/1 at=place:api/ledger.json by=reader:openapi form=alphabet measure=id role=reads scope=overlaid/operation/ledger/session/steps/1 value=sha256:abababababababababababababababababababababababababababababababab"
+ ],
+ "why": "what a place compiles because of an overlay says which overlay: the digest travels with the line, so a person sees what the document stated and what was laid over it",
+ "expected": [
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=overlay role=writes scope=keys/access/ledger/session value=sha256:abababababababababababababababababababababababababababababababab",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=overlay role=writes scope=keys/access/ledger/session/steps/1 value=sha256:abababababababababababababababababababababababababababababababab",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=operation role=writes scope=keys/access/ledger/session/steps/1 value=login",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=overlays role=writes scope=region/ledger value=sha256:abababababababababababababababababababababababababababababababab"
+ ],
+ "never": [
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=ask role=writes scope=keys/access/ledger/session/inputs/token value=secret"
+ ],
+ "expected.ok": true
+}

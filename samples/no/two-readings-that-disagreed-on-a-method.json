@@ -1,0 +1,15 @@
+{
+ "witness": "two-readings-that-disagreed-on-a-method",
+ "reads": "effects",
+ "handed": "two readings of one operation that disagree on its method",
+ "lines": [
+  "bound-lock/1 at=place:demo.json by=reader:one form=alphabet measure=id role=reads scope=openapi/method/demo/listThings value=get",
+  "bound-lock/1 at=place:demo.yaml by=reader:two form=alphabet measure=id role=reads scope=openapi/method/demo/listThings value=post",
+  "bound-lock/1 at=place:demo.json by=reader:one form=alphabet measure=id role=reads scope=openapi/path/demo/listThings value=/things"
+ ],
+ "why": "a field two readings disagree on is split, never settled by whichever came last: a host must not call an operation it cannot say the method of",
+ "expected": [
+  "- `demo/listThings` · get, post · unknown · read two ways, never called"
+ ],
+ "expected.ok": false
+}

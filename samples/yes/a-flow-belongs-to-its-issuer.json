@@ -1,0 +1,33 @@
+{
+ "witness": "a-flow-belongs-to-its-issuer",
+ "reads": "place",
+ "handed": "a flow an auth document declares once under components/x-access, the document naming what it declares, a scheme of another document that refers to it, and one whose reference resolves to none",
+ "lines": [
+  "bound-lock/1 at=place:api/auth.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/flow/org value=issuer",
+  "bound-lock/1 at=place:api/auth.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/issuers/auth value=org",
+  "bound-lock/1 at=place:api/auth.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/attach-template/org value=\"Bearer {token}\"",
+  "bound-lock/1 at=place:api/auth.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/token/org value=$steps.login.outputs.token",
+  "bound-lock/1 at=place:api/auth.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/ask/org/inputs/email value=form",
+  "bound-lock/1 at=place:api/auth.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/operation/org/steps/1 value=login",
+  "bound-lock/1 at=place:api/auth.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/source/org/steps/1 value=auth",
+  "bound-lock/1 at=place:api/auth.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/auth/jobs/BearerAuth value=http",
+  "bound-lock/1 at=place:api/auth.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/http/jobs/BearerAuth value=bearer",
+  "bound-lock/1 at=place:api/auth.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/issuer/jobs/BearerAuth value=org",
+  "bound-lock/1 at=place:api/auth.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/auth/payroll/BearerAuth value=http",
+  "bound-lock/1 at=place:api/auth.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/unresolved/payroll/BearerAuth value=auth.yaml#/components/x-access/elsewhere"
+ ],
+ "why": "access belongs to whoever issues it: the flow compiles once under its issuer, the document that declares it names it on its own region, every scheme that refers to it says only which issuer, and a reference that resolves to none is named, never guessed",
+ "expected": [
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=issuers role=writes scope=region/auth value=org",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=attach-template role=writes scope=keys/access/org value=\"Bearer {token}\"",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=operation role=writes scope=keys/access/org/steps/1 value=login",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=ask role=writes scope=keys/access/org/inputs/email value=form",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=issuer role=writes scope=keys/access/jobs/BearerAuth value=org",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=unresolved role=writes scope=keys/access/payroll/BearerAuth value=auth.yaml#/components/x-access/elsewhere"
+ ],
+ "never": [
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=operation role=writes scope=keys/access/jobs/BearerAuth/steps/1 value=login",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=attach-template role=writes scope=keys/access/jobs/BearerAuth value=\"Bearer {token}\"",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=ask role=writes scope=keys/access/payroll/BearerAuth/inputs/token value=secret"
+ ]
+}

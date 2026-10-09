@@ -1,0 +1,22 @@
+{
+ "witness": "an-answer-shows-only-what-the-document-declares",
+ "reads": "answer",
+ "handed": "one response whose members carry a field the document declares and one it does not",
+ "lines": [
+  "bound-lock/1 at=place:demo.json by=reader:openapi form=alphabet measure=id role=reads scope=openapi/answers/demo/listThings value=*/id:string|*:object",
+  "bound-lock/1 at=place:answers/demo/listThings/r1.json by=reader:openapi form=alphabet measure=offer role=reads scope=answer/r1 value=demo/listThings",
+  "bound-lock/1 at=place:answers/demo/listThings/r1.json by=reader:openapi form=alphabet measure=members role=reads scope=answer/r1 value=1",
+  "bound-lock/1 at=place:answers/demo/listThings/r1.json by=reader:openapi form=alphabet measure=text role=reads scope=answer/r1/0/id value=x1",
+  "bound-lock/1 at=place:answers/demo/listThings/r1.json by=reader:openapi form=alphabet measure=text role=reads scope=answer/r1/0/secret value=y"
+ ],
+ "why": "a response reaches a host as the document says it is shaped: a declared value is a line, an undeclared one is counted and never passed",
+ "expected": [
+  "bound-lock/1 at=place:answer by=openapi form=alphabet measure=text role=reads scope=answer/r1/0/id value=x1",
+  "bound-lock/1 at=place:answer by=openapi form=alphabet measure=withheld role=reads scope=answer/r1 value=1",
+  "bound-lock/1 at=place:answer by=openapi form=alphabet measure=offer role=reads scope=answer/r1 value=demo/listThings"
+ ],
+ "never": [
+  "bound-lock/1 at=place:answer by=openapi form=alphabet measure=text role=reads scope=answer/r1/0/secret value=y"
+ ],
+ "expected.ok": true
+}
