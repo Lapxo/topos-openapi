@@ -1,0 +1,30 @@
+{
+ "witness": "a-login-whose-next-step-the-first-answer-calls-for",
+ "reads": "place",
+ "handed": "a login that answers a token, or, for a person with several memberships, a selection to complete",
+ "lines": [
+  "bound-lock/1 at=place:api/jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/auth/jobs/BearerAuth value=http",
+  "bound-lock/1 at=place:api/jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/http/jobs/BearerAuth value=bearer",
+  "bound-lock/1 at=place:api/jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/token/jobs/BearerAuth value=$steps.login.outputs.token|$steps.select.outputs.token",
+  "bound-lock/1 at=place:api/jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/ask/jobs/BearerAuth/inputs/companyId value=choice",
+  "bound-lock/1 at=place:api/jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/from/jobs/BearerAuth/inputs/companyId value=$steps.login.outputs.companies",
+  "bound-lock/1 at=place:api/jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/label/jobs/BearerAuth/inputs/companyId value=$steps.login.outputs.names",
+  "bound-lock/1 at=place:api/jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/id/jobs/BearerAuth/steps/2 value=select",
+  "bound-lock/1 at=place:api/jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/operation/jobs/BearerAuth/steps/2 value=selectCompany",
+  "bound-lock/1 at=place:api/jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/when/jobs/BearerAuth/steps/2 value=$steps.login.outputs.selection",
+  "bound-lock/1 at=place:api/jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/value/jobs/BearerAuth/steps/2/payload/selectionToken value=$steps.login.outputs.selection",
+  "bound-lock/1 at=place:api/jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/value/jobs/BearerAuth/steps/2/payload/companyId value=$inputs.companyId"
+ ],
+ "why": "a next step is declared, never guessed: it runs when the first answer carries what its when names, carries forward what the first answer said, and what the person chooses is offered from that answer — a choice, never a free entry",
+ "expected": [
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=when role=writes scope=keys/access/jobs/BearerAuth/steps/2 value=$steps.login.outputs.selection",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=value role=writes scope=keys/access/jobs/BearerAuth/steps/2/payload/selectionToken value=$steps.login.outputs.selection",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=ask role=writes scope=keys/access/jobs/BearerAuth/inputs/companyId value=choice",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=from role=writes scope=keys/access/jobs/BearerAuth/inputs/companyId value=$steps.login.outputs.companies",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=label role=writes scope=keys/access/jobs/BearerAuth/inputs/companyId value=$steps.login.outputs.names"
+ ],
+ "never": [
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=ask role=writes scope=keys/access/jobs/BearerAuth/inputs/companyId value=form"
+ ],
+ "expected.ok": true
+}

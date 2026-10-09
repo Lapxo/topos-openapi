@@ -1,0 +1,23 @@
+{
+ "witness": "two-sources-one-operation-id",
+ "reads": "place",
+ "handed": "two sources a place holds that both name an operation getThing",
+ "lines": [
+  "bound-lock/1 at=place:jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/method/jobs/getThing value=get",
+  "bound-lock/1 at=place:jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/path/jobs/getThing value=/jobs/{id}",
+  "bound-lock/1 at=place:people.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/method/people/getThing value=get",
+  "bound-lock/1 at=place:people.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/path/people/getThing value=/people/{id}"
+ ],
+ "why": "an operation is named within its source: two sources that reuse an id are two offers, neither split",
+ "expected": [
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=class role=writes scope=offers/jobs/getThing value=read",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=class role=writes scope=offers/people/getThing value=read",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=path role=writes scope=offers/jobs/getThing/carry value=/jobs/{id}",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=path role=writes scope=offers/people/getThing/carry value=/people/{id}"
+ ],
+ "never": [
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=class role=writes scope=offers/jobs/getThing value=split",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=class role=writes scope=offers/people/getThing value=split"
+ ],
+ "expected.ok": true
+}

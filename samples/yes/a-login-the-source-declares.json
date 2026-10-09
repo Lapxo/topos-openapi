@@ -1,0 +1,29 @@
+{
+ "witness": "a-login-the-source-declares",
+ "reads": "place",
+ "handed": "the observed lines of a bearer scheme whose document declares the login that obtains its token, in another source",
+ "lines": [
+  "bound-lock/1 at=place:jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/auth/jobs/BearerAuth value=http",
+  "bound-lock/1 at=place:jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/http/jobs/BearerAuth value=bearer",
+  "bound-lock/1 at=place:jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/where/jobs value=https://staging.example.test",
+  "bound-lock/1 at=place:jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/attach-template/jobs/BearerAuth value=\"Bearer {token}\"",
+  "bound-lock/1 at=place:jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/token/jobs/BearerAuth value=$steps.login.outputs.token",
+  "bound-lock/1 at=place:jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/asks/jobs/BearerAuth value=form|secret",
+  "bound-lock/1 at=place:jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/id/jobs/BearerAuth/steps/1 value=login",
+  "bound-lock/1 at=place:jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/source/jobs/BearerAuth/steps/1 value=auth",
+  "bound-lock/1 at=place:jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/operation/jobs/BearerAuth/steps/1 value=loginPassword",
+  "bound-lock/1 at=place:jobs.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/value/jobs/BearerAuth/steps/1/outputs/token value=$response.body#/token"
+ ],
+ "why": "a token is obtained the way the source declares it: its x-access compiles to steps a host runs — here an operation of another source — and where the token is read, never to a value the person enters",
+ "expected": [
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=source role=writes scope=keys/access/jobs/BearerAuth/steps/1 value=auth",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=operation role=writes scope=keys/access/jobs/BearerAuth/steps/1 value=loginPassword",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=token role=writes scope=keys/access/jobs/BearerAuth value=$steps.login.outputs.token",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=value role=writes scope=keys/access/jobs/BearerAuth/steps/1/outputs/token value=$response.body#/token",
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=origins role=writes scope=region/jobs value=https://staging.example.test"
+ ],
+ "never": [
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=ask role=writes scope=keys/access/jobs/BearerAuth/inputs/token value=secret"
+ ],
+ "expected.ok": true
+}

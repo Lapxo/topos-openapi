@@ -1,0 +1,17 @@
+{
+ "witness": "unstated-security-is-never-anonymous",
+ "reads": "place",
+ "handed": "one GET of a source whose document states no security at all",
+ "lines": [
+  "bound-lock/1 at=place:demo.json by=reader:openapi form=alphabet measure=id role=reads scope=openapi/method/demo/listThings value=get",
+  "bound-lock/1 at=place:demo.json by=reader:openapi form=alphabet measure=id role=reads scope=openapi/path/demo/listThings value=/things"
+ ],
+ "why": "a document that states no security has not said an operation may be called anonymously: access stays unstated, and a host refuses it by name rather than calling it bare",
+ "expected": [
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=access role=writes scope=offers/demo/listThings value=unstated"
+ ],
+ "never": [
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=access role=writes scope=offers/demo/listThings value=anonymous"
+ ],
+ "expected.ok": false
+}

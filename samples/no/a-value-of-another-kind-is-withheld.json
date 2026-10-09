@@ -1,0 +1,18 @@
+{
+ "witness": "a-value-of-another-kind-is-withheld",
+ "reads": "answer",
+ "handed": "one response whose declared text field arrives as a number",
+ "lines": [
+  "bound-lock/1 at=place:demo.json by=reader:openapi form=alphabet measure=id role=reads scope=openapi/answers/demo/listThings value=*/id:string|*:object",
+  "bound-lock/1 at=place:answers/demo/listThings/r1.json by=reader:openapi form=alphabet measure=offer role=reads scope=answer/r1 value=demo/listThings",
+  "bound-lock/1 at=place:answers/demo/listThings/r1.json by=reader:openapi form=alphabet measure=number role=reads scope=answer/r1/0/id value=4"
+ ],
+ "why": "a value of a kind its document does not declare is not the value it declares: it is counted and withheld",
+ "expected": [
+  "bound-lock/1 at=place:answer by=openapi form=alphabet measure=withheld role=reads scope=answer/r1 value=1"
+ ],
+ "never": [
+  "bound-lock/1 at=place:answer by=openapi form=alphabet measure=number role=reads scope=answer/r1/0/id value=4"
+ ],
+ "expected.ok": false
+}

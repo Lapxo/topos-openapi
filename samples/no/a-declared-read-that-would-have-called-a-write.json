@@ -1,0 +1,15 @@
+{
+ "witness": "a-declared-read-that-would-have-called-a-write",
+ "reads": "effects",
+ "handed": "the observed lines of one POST that declares a read effect",
+ "lines": [
+  "bound-lock/1 at=place:spec by=reader:openapi form=alphabet measure=id role=reads scope=openapi/method/demo/reopenThing value=post",
+  "bound-lock/1 at=place:spec by=reader:openapi form=alphabet measure=id role=reads scope=openapi/path/demo/reopenThing value=/things/{id}/reopen",
+  "bound-lock/1 at=place:spec by=reader:openapi form=alphabet measure=id role=reads scope=openapi/declared/demo/reopenThing value=read"
+ ],
+ "why": "a declaration is not a proof: a POST that declares itself a read stays a write by its method, is listed and never called; a world that called it would let a document widen its own ceiling",
+ "expected": [
+  "- `demo/reopenThing` · post · read · listed, never called"
+ ],
+ "expected.ok": false
+}

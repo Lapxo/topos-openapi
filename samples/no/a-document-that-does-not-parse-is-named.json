@@ -1,0 +1,15 @@
+{
+ "witness": "a-document-that-does-not-parse-is-named",
+ "reads": "place",
+ "handed": "a file that says it is an OpenAPI document and does not parse, named by the spec region with the first line of what the parser answered",
+ "lines": [
+  "bound-lock/1 at=place:api/invoices.yaml by=reader:openapi form=alphabet measure=id role=reads scope=openapi/unparsed/invoices value=\"Map keys must be unique at line 19, column 19\""
+ ],
+ "why": "a document the world cannot read is said to be one, with why — never 'no world reads yaml', which would send the person looking for a world that already reads it",
+ "expected": [
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=unparsed role=writes scope=region/invoices value=\"Map keys must be unique at line 19, column 19\""
+ ],
+ "never": [
+  "bound-lock/1 at=place:openapi by=openapi form=alphabet measure=class role=writes scope=offers/invoices/listInvoices value=read"
+ ]
+}

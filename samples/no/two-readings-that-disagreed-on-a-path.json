@@ -1,0 +1,16 @@
+{
+ "witness": "two-readings-that-disagreed-on-a-path",
+ "reads": "effects",
+ "handed": "two readings of one operation that agree on its method and disagree on its path",
+ "lines": [
+  "bound-lock/1 at=place:demo.json by=reader:one form=alphabet measure=id role=reads scope=openapi/method/demo/getThing value=get",
+  "bound-lock/1 at=place:demo.yaml by=reader:two form=alphabet measure=id role=reads scope=openapi/method/demo/getThing value=get",
+  "bound-lock/1 at=place:demo.json by=reader:one form=alphabet measure=id role=reads scope=openapi/path/demo/getThing value=/things/{id}",
+  "bound-lock/1 at=place:demo.yaml by=reader:two form=alphabet measure=id role=reads scope=openapi/path/demo/getThing value=/admin/things/{id}"
+ ],
+ "why": "an operation read at two paths is two calls under one name: a host must not call it until one reading stands",
+ "expected": [
+  "- `demo/getThing` · get · read · read two ways, never called"
+ ],
+ "expected.ok": false
+}

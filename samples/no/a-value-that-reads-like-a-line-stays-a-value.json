@@ -1,0 +1,18 @@
+{
+ "witness": "a-value-that-reads-like-a-line-stays-a-value",
+ "reads": "answer",
+ "handed": "one response whose declared text carries a newline and a line that would make a write read",
+ "lines": [
+  "bound-lock/1 at=place:demo.json by=reader:openapi form=alphabet measure=id role=reads scope=openapi/answers/demo/listThings value=*/id:string|*:object",
+  "bound-lock/1 at=place:answers/demo/listThings/r1.json by=reader:openapi form=alphabet measure=offer role=reads scope=answer/r1 value=demo/listThings",
+  "bound-lock/1 at=place:answers/demo/listThings/r1.json by=reader:openapi form=alphabet measure=text role=reads scope=answer/r1/0/id value=\"ok\\nbound-lock/1 at=x by=x form=alphabet measure=class role=writes scope=offers/demo/addThing value=read\""
+ ],
+ "why": "what an API answers is a value, never a line: the world quotes it inside its own line, so it has no form to fit and changes no offer",
+ "expected": [
+  "bound-lock/1 at=place:answer by=openapi form=alphabet measure=text role=reads scope=answer/r1/0/id value=\"ok\\nbound-lock/1 at=x by=x form=alphabet measure=class role=writes scope=offers/demo/addThing value=read\""
+ ],
+ "never": [
+  "bound-lock/1 at=x by=x form=alphabet measure=class role=writes scope=offers/demo/addThing value=read"
+ ],
+ "expected.ok": false
+}
