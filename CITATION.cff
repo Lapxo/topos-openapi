@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Cite this software when using its OpenAPI interpretation."
+title: "Topos OpenAPI"
+type: software
+version: 0.1.2
+authors:
+  - name: Lapxo
+license: MIT
+repository-code: "https://github.com/Lapxo/topos-openapi"
