@@ -1,0 +1,1210 @@
+{
+  "protocol": "topos-openapi-producer-verification@1",
+  "sourceInventory": [
+    "src/helpers/access.ts",
+    "src/helpers/overlay.ts",
+    "src/helpers/spec.ts",
+    "src/helpers/verdict.ts",
+    "src/index.ts",
+    "src/regions/answer.ts",
+    "src/regions/auth.ts",
+    "src/regions/callable.ts",
+    "src/regions/effects.ts",
+    "src/regions/endpoints.ts",
+    "src/regions/place.ts",
+    "src/regions/readout.ts",
+    "src/regions/response.ts",
+    "src/regions/spec.ts"
+  ],
+  "inputs": [
+    {
+      "path": ".github/workflows/release.yml",
+      "sha256": "sha256:c13c157a4d818695a8f732820415176ca3218176822d3f41a443cb53e398b08d"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "sha256:0ec0bfc7c0e18e305f9969ab9b1c39b4e86b585169729ddfaaeb2c84ec287a37"
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "sha256:76a14ead35827acaaf2f6c0a53a296153e5e2f283d9533b086335c712eef9d14"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "sha256:984aa963672e199a25cfe28cc6fd3631683a162852091a71e653287c5d0ee05a"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "sha256:578a1166353ec2844fe2a76e9a105743a5d521e75820f6222125f6eea3598f54"
+    },
+    {
+      "path": "README.md",
+      "sha256": "sha256:ac02e4c572cb1c7600a9671dbfd890934b2f0bf1f548c675e984069cc7a1ab2d"
+    },
+    {
+      "path": "assets/prose-render/a1c31a72a31eaf8ea7df0fb98235c4b465aee1d9575aebcc480f09b4bf64daf1.tar.gz",
+      "sha256": "sha256:a1c31a72a31eaf8ea7df0fb98235c4b465aee1d9575aebcc480f09b4bf64daf1"
+    },
+    {
+      "path": "assets/prose-render/standing.bound",
+      "sha256": "sha256:8b678e37f1fe656a5c456f09c0d57020e3aeddb8acec2b5ffc92054a3ce26c3b"
+    },
+    {
+      "path": "delivery/08bb4e646bbeb94ab6065453541f09353fc97722ccf981c7b58208650ebd4772.tar.gz",
+      "sha256": "sha256:08bb4e646bbeb94ab6065453541f09353fc97722ccf981c7b58208650ebd4772"
+    },
+    {
+      "path": "delivery/release.json",
+      "sha256": "sha256:50e39e5b0a74385567048f651ab3fa4cb2e3ca0f8805b4ff20787caf50ca7192"
+    },
+    {
+      "path": "delivery/standing.bound",
+      "sha256": "sha256:ff8adb870ff048f511d233e7ef594136f7b4e637bd12ed71ace622e68adbb687"
+    },
+    {
+      "path": "docs/img/world.svg",
+      "sha256": "sha256:e1c6546b4a42cf5d81e1af1f1f80ec4c60ebc9154426f1615c7926ce74e98478"
+    },
+    {
+      "path": "docs/reference.md",
+      "sha256": "sha256:caab143565fd28dd473aa4d6a5a66418f6e9bd65c2fa00c4a23ecb457f2033f3"
+    },
+    {
+      "path": "docs/x-access.md",
+      "sha256": "sha256:6235903feb8fcaf6d5bcc7c9c8ba5f3c2f34347edd30d2af7382e0c918579b5d"
+    },
+    {
+      "path": "examples/release/one-document.ts",
+      "sha256": "sha256:e5bcdfc50ecd6c8d304991abb03fc9cded0679706c639f263d06475d91b84c93"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "sha256:829081421e084d43e03f515c05d02cc4fc430b871503b5c2130b13f281174ac1"
+    },
+    {
+      "path": "package.json",
+      "sha256": "sha256:997341d663ef304ffb7a77bcd8e57bc2265ff5a3ef188fe8db9e20133a5f30a4"
+    },
+    {
+      "path": "src/helpers/access.ts",
+      "sha256": "sha256:c32d358760ff3a292766f96036db2a16b65802a6282685de8f44179b69a47e8d"
+    },
+    {
+      "path": "src/helpers/overlay.ts",
+      "sha256": "sha256:72ba3db79a72f15bf67ce915e4647eeefbaf430e14ec0678e10852d8076df0a6"
+    },
+    {
+      "path": "src/helpers/spec.ts",
+      "sha256": "sha256:7f6d46e38f0a155483e5a6a953a1c134b77ed846c080afaa0ead1643c0266150"
+    },
+    {
+      "path": "src/helpers/verdict.ts",
+      "sha256": "sha256:83508a8c613a4ccc3545f1c8ff07badbe2e8f83ec05f6e7d61bd3b7012f411d9"
+    },
+    {
+      "path": "src/index.ts",
+      "sha256": "sha256:cfccd642c92673d961a17589dafbfb2b309a89e941c011e105993e21c78490c8"
+    },
+    {
+      "path": "src/regions/answer.ts",
+      "sha256": "sha256:1d770522f7f5fac289aa9bbe7901612d741fba8d66904d3ffaf2081efeab4bb6"
+    },
+    {
+      "path": "src/regions/auth.ts",
+      "sha256": "sha256:711ec90f22a08d63ff14549b4e8724488abbae8b0b511371892b0b12473570a7"
+    },
+    {
+      "path": "src/regions/callable.ts",
+      "sha256": "sha256:c75a5c1677d19c4776bdf9a506acafd418544f4543bd7540096104ea4d714be6"
+    },
+    {
+      "path": "src/regions/effects.ts",
+      "sha256": "sha256:d72052d71feee0b5905776d47b3c616e1cebd02096b303190c5faade8edff426"
+    },
+    {
+      "path": "src/regions/endpoints.ts",
+      "sha256": "sha256:9a5ea89ced7a1fe2ade9c4ba738b89825e099985d7c0734f54aefa0b01de2400"
+    },
+    {
+      "path": "src/regions/place.ts",
+      "sha256": "sha256:bf8c1ee7feafa439ca30cdb382c9663b742016b0c1ab63e09c72c3de4d3f6a6a"
+    },
+    {
+      "path": "src/regions/readout.ts",
+      "sha256": "sha256:93d4cc4f3b0331850fae504ff2e8e95c073280232ea854f0e4103b2cb713062f"
+    },
+    {
+      "path": "src/regions/response.ts",
+      "sha256": "sha256:7a81a442c0e87fe1fd297715701f850b3969950f2a2a79f78374efede20e1bfb"
+    },
+    {
+      "path": "src/regions/spec.ts",
+      "sha256": "sha256:864eae8d8b24de02506050f397ecd7c76528702b70d00f9bba28ae8584c246b5"
+    },
+    {
+      "path": "test/compile-region.test.ts",
+      "sha256": "sha256:1b5da2a23b23e24e7693bf5363a0b47245fd8483244a148c461695862b62cee9"
+    },
+    {
+      "path": "test/prior-place.test.ts",
+      "sha256": "sha256:c622edf0e7a61a1d4592304768561320a97c20ce71b43480b971232ce206766d"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "sha256:f97b6154982dfe918be97f71554bc8cad983638fbe269733163b7befeaf9d039"
+    },
+    {
+      "path": "vectors/answer.json",
+      "sha256": "sha256:3abc57501cb5acbe5ff48432b10470c75370e106ade5dee604d0367fc4a34e67"
+    },
+    {
+      "path": "vectors/auth.json",
+      "sha256": "sha256:cedb5d5fcb5bba1169ed5d7c045dad7373f3c4ff63c60f471a3ca5a3f989a14e"
+    },
+    {
+      "path": "vectors/callable.json",
+      "sha256": "sha256:8dbd5aff949a4d1685be6ae38686093121bcdc4b23e60aee72515ba07d48cdea"
+    },
+    {
+      "path": "vectors/effects.json",
+      "sha256": "sha256:955a8230841a4bc5d20abacbafc2d315576d0bd0ca1cbef8c06bd2002cab743e"
+    },
+    {
+      "path": "vectors/endpoints.json",
+      "sha256": "sha256:7d22d37cc601eebbbf47719ea7ba7fda42d9ab696b95c777ab56a460efc1d4ef"
+    },
+    {
+      "path": "vectors/place.json",
+      "sha256": "sha256:2b7be8f865f75024a92739de2401c224320c63360f83d1d85cfc728c29c4d16e"
+    },
+    {
+      "path": "vectors/readout.json",
+      "sha256": "sha256:d4abfa995ba74845672fba13f9a82a6a260b020fc3d71da89bb25f6388c79f9d"
+    },
+    {
+      "path": "vectors/response.json",
+      "sha256": "sha256:8e6d4c275a6ba96926ba475f5afc7dcb96e7c1c2d214dd8a8f3116a45645f423"
+    },
+    {
+      "path": "vectors/spec.json",
+      "sha256": "sha256:5dab5da8dd28a6018442a58b9fa51d9eb4de263b42a7d4a625c81bcad2010391"
+    }
+  ],
+  "runs": [
+    {
+      "node": "22",
+      "tests": 12,
+      "log": "TAP version 13\n# Subtest: dedicated compiler preserves legacy output and declarations\nok 1 - dedicated compiler preserves legacy output and declarations\n  ---\n  duration_ms: 22.467125\n  type: 'test'\n  ...\n# Subtest: prior place: synthetic:topos-openapi · place@0 · README.md\nok 2 - prior place: synthetic:topos-openapi · place@0 · README.md\n  ---\n  duration_ms: 11.75175\n  type: 'test'\n  ...\n# Subtest: prior place: synthetic:topos-openapi · place@1 · README.md\nok 3 - prior place: synthetic:topos-openapi · place@1 · README.md\n  ---\n  duration_ms: 4.137458\n  type: 'test'\n  ...\n# Subtest: prior place: shelf-auth:topos-openapi · place@0 · README.md\nok 4 - prior place: shelf-auth:topos-openapi · place@0 · README.md\n  ---\n  duration_ms: 1.252166\n  type: 'test'\n  ...\n# Subtest: prior place: shelf-auth:topos-openapi · place@1 · README.md\nok 5 - prior place: shelf-auth:topos-openapi · place@1 · README.md\n  ---\n  duration_ms: 1.300666\n  type: 'test'\n  ...\n# Subtest: prior place: petstore:topos-openapi · place@0 · README.md\nok 6 - prior place: petstore:topos-openapi · place@0 · README.md\n  ---\n  duration_ms: 6.552042\n  type: 'test'\n  ...\n# Subtest: prior place: petstore:topos-openapi · place@1 · README.md\nok 7 - prior place: petstore:topos-openapi · place@1 · README.md\n  ---\n  duration_ms: 6.054042\n  type: 'test'\n  ...\n# Subtest: prior place: github-issues:topos-openapi · place@0 · README.md\nok 8 - prior place: github-issues:topos-openapi · place@0 · README.md\n  ---\n  duration_ms: 23.052125\n  type: 'test'\n  ...\n# Subtest: prior place: github-issues:topos-openapi · place@1 · README.md\nok 9 - prior place: github-issues:topos-openapi · place@1 · README.md\n  ---\n  duration_ms: 24.429542\n  type: 'test'\n  ...\n# Subtest: prior place: collision:topos-openapi · place@1 · README.md\nok 10 - prior place: collision:topos-openapi · place@1 · README.md\n  ---\n  duration_ms: 1.913208\n  type: 'test'\n  ...\n# Subtest: prior place: unsupported:topos-openapi · place@1 · README.md\nok 11 - prior place: unsupported:topos-openapi · place@1 · README.md\n  ---\n  duration_ms: 1.117833\n  type: 'test'\n  ...\n# Subtest: prior place: unresolved:topos-openapi · place@1 · README.md\nok 12 - prior place: unresolved:topos-openapi · place@1 · README.md\n  ---\n  duration_ms: 0.958083\n  type: 'test'\n  ...\n1..12\n# tests 12\n# suites 0\n# pass 12\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 327.565709\n",
+      "sha256": "sha256:2b835d9918a3bcd086047de9dc30b12417ea5bee50e22a815a7e0885c7f3ee64",
+      "retained": true
+    },
+    {
+      "node": "24",
+      "tests": 12,
+      "log": "✔ dedicated compiler preserves legacy output and declarations (26.481666ms)\n✔ prior place: synthetic:topos-openapi · place@0 · README.md (12.429666ms)\n✔ prior place: synthetic:topos-openapi · place@1 · README.md (4.011167ms)\n✔ prior place: shelf-auth:topos-openapi · place@0 · README.md (1.526167ms)\n✔ prior place: shelf-auth:topos-openapi · place@1 · README.md (1.327417ms)\n✔ prior place: petstore:topos-openapi · place@0 · README.md (6.751833ms)\n✔ prior place: petstore:topos-openapi · place@1 · README.md (6.269292ms)\n✔ prior place: github-issues:topos-openapi · place@0 · README.md (24.068583ms)\n✔ prior place: github-issues:topos-openapi · place@1 · README.md (23.243042ms)\n✔ prior place: collision:topos-openapi · place@1 · README.md (0.928666ms)\n✔ prior place: unsupported:topos-openapi · place@1 · README.md (0.800709ms)\n✔ prior place: unresolved:topos-openapi · place@1 · README.md (1.257291ms)\nℹ tests 12\nℹ suites 0\nℹ pass 12\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 362.81825\n",
+      "sha256": "sha256:e8f158c70f6abd988f79115c31a1d7046144536a05db032e94201a987790c9d0",
+      "retained": true
+    }
+  ],
+  "standing": "sha256:ff8adb870ff048f511d233e7ef594136f7b4e637bd12ed71ace622e68adbb687",
+  "capsule": "sha256:08bb4e646bbeb94ab6065453541f09353fc97722ccf981c7b58208650ebd4772",
+  "compilation": {
+    "region": "openapi-place",
+    "legacy": "place",
+    "sameImplementation": true,
+    "providerInputsDeclared": true
+  },
+  "expectedSourceLines": 512,
+  "admittedSourceCeiling": "0..200 (actual base); 0..512 requires separate approval",
+  "historicalEvidence": "The 12 producer tests were executed against these identical source/test inputs before metadata and documentation selection. They are not new release or Head acceptance.",
+  "policy": [
+    {
+      "scope": "prose/en/openapi/effects",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/forms",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/auth-heading",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/regions",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/region-heading",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/reading/view",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/region",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/form",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/effect",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/auth",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/server",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/idea",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/door/what",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/page/x-access",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "docs/tagline",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/reading/heading",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/claims/1-costs",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/refuses/call",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/refuses/prove",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/refuses/guess",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/rests/on",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/figure/world/heading",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/page/x-access/heading",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/claims/heading",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/refuses/heading",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/idea/heading",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/figure/learn/source",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "read/rate",
+      "role": "reads",
+      "measure": "calls-per-hour",
+      "value": "0..60"
+    },
+    {
+      "scope": "prose/en/openapi/figure/world/adopted",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "read/response-bytes",
+      "role": "reads",
+      "measure": "bytes",
+      "value": "0..1048576"
+    },
+    {
+      "scope": "read/pages",
+      "role": "reads",
+      "measure": "pages",
+      "value": "0..1"
+    },
+    {
+      "scope": "private",
+      "role": "writes",
+      "measure": "status",
+      "value": "present"
+    },
+    {
+      "scope": "view/figure-world",
+      "role": "demands",
+      "measure": "id",
+      "value": "text"
+    },
+    {
+      "scope": "read/items",
+      "role": "reads",
+      "measure": "members",
+      "value": "0..50"
+    },
+    {
+      "scope": "write/calls",
+      "role": "reads",
+      "measure": "calls",
+      "value": "0..0"
+    },
+    {
+      "scope": "form/openapi/unstated",
+      "role": "writes",
+      "measure": "id",
+      "value": "unstated"
+    },
+    {
+      "scope": "prose/en/openapi/door/words",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/listed",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "literal/api",
+      "role": "reads",
+      "measure": "count",
+      "value": "0..0"
+    },
+    {
+      "scope": "prose/en/openapi/nothing",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/split",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/called",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "region/answer",
+      "role": "render",
+      "measure": "reads",
+      "value": "capsule/key|lang|form/template/**|form/openapi/**|prose/**|openapi/**|overlaid/**|region/spec|wire/provider-inputs|read/**|answer/**|region/response"
+    },
+    {
+      "scope": "region/auth",
+      "role": "render",
+      "measure": "reads",
+      "value": "capsule/key|lang|form/template/**|form/openapi/**|prose/**|openapi/**|overlaid/**|region/spec|wire/provider-inputs"
+    },
+    {
+      "scope": "region/callable",
+      "role": "receipt",
+      "measure": "reads",
+      "value": "capsule/key|lang|form/template/**|form/openapi/**|prose/**|openapi/**|overlaid/**|region/spec|wire/provider-inputs"
+    },
+    {
+      "scope": "form/openapi/unmapped",
+      "role": "writes",
+      "measure": "id",
+      "value": "unknown"
+    },
+    {
+      "scope": "wire/digest-algorithms",
+      "role": "reads",
+      "measure": "id",
+      "value": "sha256:era1"
+    },
+    {
+      "scope": "capsule/domain",
+      "role": "writes",
+      "measure": "id",
+      "value": "apis"
+    },
+    {
+      "scope": "view/readme",
+      "role": "demands",
+      "measure": "id",
+      "value": "text"
+    },
+    {
+      "scope": "form/openapi/effect/get",
+      "role": "writes",
+      "measure": "id",
+      "value": "read"
+    },
+    {
+      "scope": "region/effects",
+      "role": "render",
+      "measure": "reads",
+      "value": "capsule/key|lang|form/template/**|form/openapi/**|prose/**|openapi/**|overlaid/**|region/spec|wire/provider-inputs"
+    },
+    {
+      "scope": "region/endpoints",
+      "role": "render",
+      "measure": "reads",
+      "value": "capsule/key|lang|form/template/**|form/openapi/**|prose/**|openapi/**|overlaid/**|region/spec|wire/provider-inputs"
+    },
+    {
+      "scope": "wire/era",
+      "role": "reads",
+      "measure": "id",
+      "value": "era1"
+    },
+    {
+      "scope": "docs/world",
+      "role": "writes",
+      "measure": "id",
+      "value": "one-document"
+    },
+    {
+      "scope": "audit/wire/families",
+      "role": "reads",
+      "measure": "id",
+      "value": "audit|beat|block|cites|comments|concept|cost|dep|effect|fold|hazard|keys|law|license|lines|literal|offers|question|reader|region|render|roles|sample|session|take|test|tree|vector|view|write"
+    },
+    {
+      "scope": "audit/wire/fields",
+      "role": "reads",
+      "measure": "id",
+      "value": "scope|role|form|measure|value|by|at|needs|sig|epoch|shape|restsOn|condition|about|kind|view"
+    },
+    {
+      "scope": "audit/wire/receipt-fields",
+      "role": "reads",
+      "measure": "id",
+      "value": "scope|role|measure|form|value|at"
+    },
+    {
+      "scope": "audit/wire/forms",
+      "role": "reads",
+      "measure": "id",
+      "value": "interval|alphabet|ladder"
+    },
+    {
+      "scope": "view/index",
+      "role": "demands",
+      "measure": "id",
+      "value": "text"
+    },
+    {
+      "scope": "capsule/key",
+      "role": "writes",
+      "measure": "id",
+      "value": "openapi"
+    },
+    {
+      "scope": "form/openapi/auth/oauth2",
+      "role": "writes",
+      "measure": "id",
+      "value": "oauth"
+    },
+    {
+      "scope": "lang",
+      "role": "writes",
+      "measure": "id",
+      "value": "en"
+    },
+    {
+      "scope": "signer/timeout",
+      "role": "writes",
+      "measure": "milliseconds",
+      "value": "30000..30000"
+    },
+    {
+      "scope": "signer/response-bytes",
+      "role": "writes",
+      "measure": "bytes",
+      "value": "1048576..1048576"
+    },
+    {
+      "scope": "form/openapi/callable",
+      "role": "writes",
+      "measure": "id",
+      "value": "read"
+    },
+    {
+      "scope": "form/openapi/split",
+      "role": "writes",
+      "measure": "id",
+      "value": "split"
+    },
+    {
+      "scope": "form/openapi/unresolved",
+      "role": "writes",
+      "measure": "id",
+      "value": "unresolved"
+    },
+    {
+      "scope": "capsule/dependencies",
+      "role": "writes",
+      "measure": "id",
+      "value": "yaml@2.9.1"
+    },
+    {
+      "scope": "docs/reading",
+      "role": "writes",
+      "measure": "id",
+      "value": "endpoints|effects|auth"
+    },
+    {
+      "scope": "region/place",
+      "role": "render",
+      "measure": "reads",
+      "value": "capsule/key|lang|form/template/**|form/openapi/**|prose/**|openapi/**|overlaid/**|region/spec|wire/provider-inputs|read/**|write/**|capsule/**|wire/provider-inputs|region/**"
+    },
+    {
+      "scope": "form/openapi/profiles",
+      "role": "writes",
+      "measure": "id",
+      "value": "openapi/3.0|openapi/3.1|overlay/1.0|x-access/1"
+    },
+    {
+      "scope": "region/readout",
+      "role": "render",
+      "measure": "reads",
+      "value": "capsule/key|lang|form/template/**|form/openapi/**|prose/**|openapi/**|overlaid/**|region/spec|wire/provider-inputs|read/**|write/**"
+    },
+    {
+      "scope": "view/receipts",
+      "role": "demands",
+      "measure": "id",
+      "value": "receipts@8|receipts@0|receipts@1"
+    },
+    {
+      "scope": "view/reference-capsule",
+      "role": "demands",
+      "measure": "id",
+      "value": "text"
+    },
+    {
+      "scope": "region/response",
+      "role": "receipt",
+      "measure": "reads",
+      "value": "*.json"
+    },
+    {
+      "scope": "audit/wire/roles",
+      "role": "reads",
+      "measure": "id",
+      "value": "reads|writes|demands"
+    },
+    {
+      "scope": "capsule/runtime",
+      "role": "writes",
+      "measure": "id",
+      "value": "node"
+    },
+    {
+      "scope": "wire/shapes",
+      "role": "reads",
+      "measure": "id",
+      "value": "decision|lock|package|reader|render|run|vector|view"
+    },
+    {
+      "scope": "wire/signature-algorithms",
+      "role": "reads",
+      "measure": "id",
+      "value": "ed25519|sha256:58f1f0983fe65f062bebefd0a6ffc901049c67525ef12dd86ed4dbb7a184b834|ed25519:era1"
+    },
+    {
+      "scope": "region/spec",
+      "role": "receipt",
+      "measure": "reads",
+      "value": "*.json@*|*.yaml@*|*.yml@*"
+    },
+    {
+      "scope": "wire/states",
+      "role": "reads",
+      "measure": "id",
+      "value": "absent|present|unread|withdraw"
+    },
+    {
+      "scope": "capsule/topos",
+      "role": "writes",
+      "measure": "digest",
+      "value": "sha256:fd7fb3783cad1919a7b0236df096c6b4c0d71d5a2f81fb14532779e1e83da261"
+    },
+    {
+      "scope": "vector/auth",
+      "role": "writes",
+      "measure": "digest",
+      "value": "sha256:cedb5d5fcb5bba1169ed5d7c045dad7373f3c4ff63c60f471a3ca5a3f989a14e"
+    },
+    {
+      "scope": "vector/callable",
+      "role": "writes",
+      "measure": "digest",
+      "value": "sha256:8dbd5aff949a4d1685be6ae38686093121bcdc4b23e60aee72515ba07d48cdea"
+    },
+    {
+      "scope": "vector/effects",
+      "role": "writes",
+      "measure": "digest",
+      "value": "sha256:955a8230841a4bc5d20abacbafc2d315576d0bd0ca1cbef8c06bd2002cab743e"
+    },
+    {
+      "scope": "vector/endpoints",
+      "role": "writes",
+      "measure": "digest",
+      "value": "sha256:7d22d37cc601eebbbf47719ea7ba7fda42d9ab696b95c777ab56a460efc1d4ef"
+    },
+    {
+      "scope": "wire/provider-inputs",
+      "role": "writes",
+      "measure": "id",
+      "value": "standing-projection@1"
+    },
+    {
+      "scope": "docs/page/x-access",
+      "role": "writes",
+      "measure": "id",
+      "value": "docs/x-access.md"
+    },
+    {
+      "scope": "prose/en/openapi/reading/lead",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "capsule/host",
+      "role": "writes",
+      "measure": "id",
+      "value": "flows|calls|credentials"
+    },
+    {
+      "scope": "form/openapi/capsule/inputs/answer",
+      "role": "reads",
+      "measure": "reads",
+      "value": "capsule/key|form/**|prose/**|read/**|region/**|write/**"
+    },
+    {
+      "scope": "region/place",
+      "role": "writes",
+      "measure": "writes",
+      "value": "region/**|keys/**|offers/**|read/**|write/**"
+    },
+    {
+      "scope": "region/response",
+      "role": "writes",
+      "measure": "writes",
+      "value": "answer/**"
+    },
+    {
+      "scope": "region/spec",
+      "role": "writes",
+      "measure": "writes",
+      "value": "openapi/**|overlaid/**"
+    },
+    {
+      "scope": "docs/what",
+      "role": "writes",
+      "measure": "id",
+      "value": "docs/reference.md"
+    },
+    {
+      "scope": "capsule/effects",
+      "role": "writes",
+      "measure": "effects",
+      "value": "none"
+    },
+    {
+      "scope": "capsule/holds",
+      "role": "writes",
+      "measure": "id",
+      "value": "./"
+    },
+    {
+      "scope": "form/openapi/x-access",
+      "role": "writes",
+      "measure": "id",
+      "value": "components/x-access"
+    },
+    {
+      "scope": "prose/en/openapi/claims/receipt",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/unknown",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/openapi/untagged",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "examples/one-document",
+      "role": "reads",
+      "measure": "id",
+      "value": "e5bcdfc50ecd"
+    },
+    {
+      "scope": "claims/1-costs",
+      "role": "writes",
+      "measure": "id",
+      "value": "dependencies=dependencies"
+    },
+    {
+      "scope": "region/checks",
+      "role": "reads",
+      "measure": "coordinates",
+      "value": "vectors/**|samples/**|examples/**"
+    },
+    {
+      "scope": "region/project",
+      "role": "reads",
+      "measure": "coordinates",
+      "value": "package.json|tsconfig.json"
+    },
+    {
+      "scope": "region/source",
+      "role": "reads",
+      "measure": "coordinates",
+      "value": "src/**"
+    },
+    {
+      "scope": "license",
+      "role": "writes",
+      "measure": "id",
+      "value": "MIT"
+    },
+    {
+      "scope": "name",
+      "role": "writes",
+      "measure": "id",
+      "value": "@lapxo/topos-openapi"
+    },
+    {
+      "scope": "topos-openapi/src/lines",
+      "role": "reads",
+      "measure": "count",
+      "value": "0..200"
+    },
+    {
+      "scope": "version",
+      "role": "writes",
+      "measure": "id",
+      "value": "0.1.2"
+    },
+    {
+      "scope": "form/openapi/auth/apiKey",
+      "role": "writes",
+      "measure": "id",
+      "value": "key"
+    },
+    {
+      "scope": "form/openapi/auth/http",
+      "role": "writes",
+      "measure": "id",
+      "value": "key"
+    },
+    {
+      "scope": "form/openapi/auth/openIdConnect",
+      "role": "writes",
+      "measure": "id",
+      "value": "oauth"
+    },
+    {
+      "scope": "form/openapi/effect/delete",
+      "role": "writes",
+      "measure": "id",
+      "value": "delete"
+    },
+    {
+      "scope": "form/openapi/effect/patch",
+      "role": "writes",
+      "measure": "id",
+      "value": "write"
+    },
+    {
+      "scope": "form/openapi/effect/post",
+      "role": "writes",
+      "measure": "id",
+      "value": "write"
+    },
+    {
+      "scope": "form/openapi/effect/put",
+      "role": "writes",
+      "measure": "id",
+      "value": "write"
+    },
+    {
+      "scope": "form/template/openapi/auth",
+      "role": "writes",
+      "measure": "id",
+      "value": "scheme|type|kind|carried"
+    },
+    {
+      "scope": "form/template/openapi/effect",
+      "role": "writes",
+      "measure": "id",
+      "value": "key|method|effect|status"
+    },
+    {
+      "scope": "form/template/openapi/form",
+      "role": "writes",
+      "measure": "id",
+      "value": "key|method|path|params|answers"
+    },
+    {
+      "scope": "form/template/openapi/region",
+      "role": "writes",
+      "measure": "id",
+      "value": "tag|count"
+    },
+    {
+      "scope": "form/template/openapi/region-heading",
+      "role": "writes",
+      "measure": "id",
+      "value": "tag"
+    },
+    {
+      "scope": "form/template/openapi/server",
+      "role": "writes",
+      "measure": "id",
+      "value": "url"
+    },
+    {
+      "scope": "form/openapi/capsule/inputs/auth",
+      "role": "reads",
+      "measure": "reads",
+      "value": "capsule/key|form/**|prose/**|read/**|region/**|write/**"
+    },
+    {
+      "scope": "form/openapi/capsule/inputs/callable",
+      "role": "reads",
+      "measure": "reads",
+      "value": "capsule/key|form/**|prose/**|read/**|region/**|write/**"
+    },
+    {
+      "scope": "form/openapi/capsule/inputs/effects",
+      "role": "reads",
+      "measure": "reads",
+      "value": "capsule/key|form/**|prose/**|read/**|region/**|write/**"
+    },
+    {
+      "scope": "form/openapi/capsule/inputs/endpoints",
+      "role": "reads",
+      "measure": "reads",
+      "value": "capsule/key|form/**|prose/**|read/**|region/**|write/**"
+    },
+    {
+      "scope": "form/openapi/capsule/inputs/place",
+      "role": "reads",
+      "measure": "reads",
+      "value": "capsule/key|form/**|prose/**|read/**|region/**|write/**"
+    },
+    {
+      "scope": "form/openapi/capsule/inputs/readout",
+      "role": "reads",
+      "measure": "reads",
+      "value": "capsule/key|form/**|prose/**|read/**|region/**|write/**"
+    },
+    {
+      "scope": "form/openapi/capsule/inputs/response",
+      "role": "reads",
+      "measure": "reads",
+      "value": "capsule/key|form/**|prose/**|read/**|region/**|write/**"
+    },
+    {
+      "scope": "form/openapi/capsule/inputs/spec",
+      "role": "reads",
+      "measure": "reads",
+      "value": "capsule/key|form/**|prose/**|read/**|region/**|write/**"
+    },
+    {
+      "scope": "wire/at-classes",
+      "role": "reads",
+      "measure": "id",
+      "value": "origin|place|receipt|witness|policy"
+    },
+    {
+      "scope": "wire/fields",
+      "role": "reads",
+      "measure": "id",
+      "value": "scope|role|form|measure|value|by|at|needs|sig|epoch|shape|restsOn|condition|about|kind|view|witness"
+    },
+    {
+      "scope": "wire/forms",
+      "role": "reads",
+      "measure": "id",
+      "value": "interval|alphabet|ladder"
+    },
+    {
+      "scope": "wire/required",
+      "role": "reads",
+      "measure": "id",
+      "value": "scope|role|form|measure|value|by|at"
+    },
+    {
+      "scope": "wire/roles",
+      "role": "reads",
+      "measure": "id",
+      "value": "reads|writes|demands|source|render|receipt"
+    },
+    {
+      "scope": "region/openapi-place",
+      "role": "render",
+      "measure": "reads",
+      "value": "capsule/key|lang|form/template/**|form/openapi/**|prose/**|openapi/**|overlaid/**|region/spec|wire/provider-inputs|read/**|write/**|capsule/**|wire/provider-inputs|region/**"
+    },
+    {
+      "scope": "region/openapi-place",
+      "role": "writes",
+      "measure": "writes",
+      "value": "region/**|keys/**|offers/**|read/**|write/**"
+    },
+    {
+      "scope": "capsule/compile-region",
+      "role": "writes",
+      "measure": "id",
+      "value": "openapi-place"
+    },
+    {
+      "scope": "form/openapi/capsule/inputs/openapi-place",
+      "role": "reads",
+      "measure": "reads",
+      "value": "capsule/key|form/**|prose/**|read/**|region/**|write/**"
+    },
+    {
+      "scope": "wire/region-measures",
+      "role": "reads",
+      "measure": "id",
+      "value": "coordinates|leaves"
+    },
+    {
+      "scope": "uses/prose-render",
+      "role": "writes",
+      "measure": "digest",
+      "value": "sha256:8b678e37f1fe656a5c456f09c0d57020e3aeddb8acec2b5ffc92054a3ce26c3b"
+    },
+    {
+      "scope": "dep/runtime-prose-render",
+      "role": "writes",
+      "measure": "id",
+      "value": "sha256:a1c31a72a31eaf8ea7df0fb98235c4b465aee1d9575aebcc480f09b4bf64daf1"
+    },
+    {
+      "scope": "prose/en/documents/index",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/documents/reference-capsule",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/documents/figure-world",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "topos-openapi/conformance",
+      "role": "demands",
+      "measure": "defects",
+      "value": "0..0"
+    },
+    {
+      "scope": "topos-openapi/delivery",
+      "role": "demands",
+      "measure": "defects",
+      "value": "0..0"
+    },
+    {
+      "scope": "view/gitignore",
+      "role": "demands",
+      "measure": "id",
+      "value": "text"
+    },
+    {
+      "scope": "view/citation-file",
+      "role": "demands",
+      "measure": "id",
+      "value": "text"
+    },
+    {
+      "scope": "view/guide",
+      "role": "demands",
+      "measure": "id",
+      "value": "text"
+    },
+    {
+      "scope": "view/manifest",
+      "role": "demands",
+      "measure": "id",
+      "value": "text"
+    },
+    {
+      "scope": "view/pipeline-release",
+      "role": "demands",
+      "measure": "id",
+      "value": "text"
+    },
+    {
+      "scope": "view/tsconfig",
+      "role": "demands",
+      "measure": "id",
+      "value": "text"
+    },
+    {
+      "scope": "prose/en/documents/readme",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "form/openapi/capsule",
+      "role": "writes",
+      "measure": "digest",
+      "value": "sha256:08bb4e646bbeb94ab6065453541f09353fc97722ccf981c7b58208650ebd4772"
+    },
+    {
+      "scope": "prose/en/documents/gitignore",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/documents/citation-file",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/documents/guide",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/documents/manifest",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/documents/pipeline-release",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "prose/en/documents/tsconfig",
+      "role": "writes",
+      "measure": "text",
+      "value": "lock"
+    },
+    {
+      "scope": "dep/release-workflow",
+      "role": "writes",
+      "measure": "id",
+      "value": "sha256:c13c157a4d818695a8f732820415176ca3218176822d3f41a443cb53e398b08d"
+    }
+  ],
+  "capacityPhases": {
+    "scope": "topos-openapi/src/lines",
+    "values": [
+      "0..200",
+      "0..512"
+    ],
+    "reading": 512,
+    "meaning": "The reader reports 512 in both phases. Bound alone judges that count against the currently admitted ceiling; accepting either named phase grants no authority."
+  },
+  "retention": "All twelve protocol test executions retain their original identity. Changes cover producer document contracts, artifact descriptor, source-capacity phases and current-input bindings only."
+}

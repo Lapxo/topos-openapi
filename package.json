@@ -1,6 +1,6 @@
 {
   "name": "@lapxo/topos-openapi",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "description": "A world of APIs built on topos: any OpenAPI 3 document read as a lock, its operations as forms and its methods as declared effects, never as proven ones.",
   "type": "module",

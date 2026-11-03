@@ -22,7 +22,7 @@ const readsOf = (lines: readonly Fields[], region: string): readonly string[] =>
 /** The world's own lines a region reads beside the place's, its prose under its key dropped: the key is the world's, never the place's. */
 const own = (lines: readonly Fields[]): readonly Fields[] => ((key) => lines.filter((f) => /^(prose|form|read|write)\//.test(f['scope'] ?? '')).map((f) => ({ ...f, scope: (f['scope'] ?? '').replace(new RegExp(`^prose/([^/]+)/${key}/`), 'prose/$1/') })))(lines.find((f) => f['scope'] === 'capsule/key')?.['value'] ?? '');
 
-const renders = { answer: answer.render, auth: auth.render, effects: effects.render, endpoints: endpoints.render, place: place.render, readout: readout.render } as const;
+const renders = { answer: answer.render, auth: auth.render, effects: effects.render, endpoints: endpoints.render, place: place.render, 'openapi-place': place.render, readout: readout.render } as const;
 const receipts = { callable: callable.receipt } as const;
 const observers = { response: response.observe, spec: spec.observe } as const;
 const with_ = <T>(region: (asked: Asked) => T, lines: readonly Fields[]) => (asked: Asked) => region({ ...asked, lines: [...asked.lines, ...own(lines)] });
